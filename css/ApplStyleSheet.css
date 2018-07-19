@@ -1,0 +1,140 @@
+body {  
+  /* position: relative; */
+}
+
+.header {
+  background-color: #cf4647;
+  color:#fff;
+}
+#navbar {
+  overflow: hidden;
+  background-color: transparent;
+}
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1em;
+}
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+.content1 {
+  padding: 16px;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.sticky + .content1 {
+  padding-top: 60px; 
+}
+.content1 {
+  padding: 100px 0;
+  margin: 50px auto 0 auto;
+  width: 80%;
+}
+.headerHorizantalProgressBar {
+  z-index: 1;
+  width: 100%;
+  background-color: gray;
+}
+
+.header h2 {
+  text-align: center;
+}
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: #cf4647;
+}
+.progress-bar {
+  height: 8px;
+  background: #fff;
+  width: 0%;
+}
+.content1{
+  padding: 100px 0;
+  margin: 50px auto 0 auto;
+  width: 80%;
+}
+
+/* scroll top css */
+#myBtn {
+  position: fixed;
+  bottom: 12px;
+  right: 15px;
+  z-index: 0;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  background-color: gray;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 10px;
+  opacity:0.5;
+}
+
+#myBtn:hover {
+  background-color: #cf4647;
+  opacity:1;
+}
+
+.nav-link{
+  text-decoration:none;
+  font-size:18px;
+  line-height:30px;
+  color:#fff;
+  padding-top:30px;
+}
+.nav-link:not(:first-of-type){
+  margin-left:20px
+}
+
+.nav-link-font > a{
+  color:#fff;
+  text-decoration:none;
+}
+
+#SectionHome {padding-top:100px;}
+#SectionAboutUs {padding-top:100px; }
+#SectionContactUs {padding-top:50px;}
+#SectionBlog {padding-top:100px; }
+#SectionOurProjects {padding-top:100px;}
+
+.rowr {
+    display: flex;
+}
+
+.columnc {
+    flex: 33.33%;
+    padding: 5px;
+}
+
+.column-one-fourth {
+    flex: 25%;
+    padding: 5px;
+}
+
+.footer {
+    color: white;
+	height: 200px;
+    background: gray; /* For browsers that do not support gradients */
+    background: radial-gradient(#d86a6b,#d35859, #cf4647); /* Standard syntax (must be last) */
+}
+
+
+/*********Timeline start*********/
+
+/*********Timeline end****************/
