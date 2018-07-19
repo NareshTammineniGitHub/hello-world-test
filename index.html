@@ -15,7 +15,7 @@
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
-  <div class="header">
+  <div class="header container-fluid">
     <div class="row">
       <div class="col-sm-6" style="text-align: right; padding-right: 30px;">
         <img src="images/logo.png" alt="Helping Hands" height="60px" width="250px;" class="img-responsive">
@@ -77,7 +77,7 @@
 
 
 
-  <div class="content1">
+  <div class="content1 container-fluid">
     <h3>Sticky Navigation Example</h3>
     <p>The navbar will stick to the top when you reach its scroll position.</p>
     <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum,
@@ -105,12 +105,12 @@
 
   <!-- Four images -->
 
-  <div>
-    <div class="row">
-      <div class="col-sm-6">
+  <div class="container">
+    <div class="rowr">
+      <div class="columnc">
         <h1> - Education - </h1>
       </div>
-      <div class="col-sm-6">
+      <div class="columnc">
         <img src="images/education-11.jpg" alt="Los Angeles" style="width:100%;" class="img-responsive ">
       </div>
     </div>
@@ -119,11 +119,11 @@
     <br>
     <br>
 
-    <div class="row">
-      <div class="col-sm-5">
+    <div class="rowr">
+      <div class="columnc">
         <img src="images\gp1.gif" alt="Los Angeles" style="width:100%;" class="img-responsive ">
       </div>
-      <div class="col-sm-7">
+      <div class="columnc">
         <h1 style="text-align:center"> - Planting Trees- </h1>
       </div>
     </div>
@@ -132,11 +132,11 @@
     <br>
     <br>
 
-    <div class="row">
-      <div class="col-sm-5">
+    <div class="rowr">
+      <div class="columnc">
         <h1> - Water- </h1>
       </div>
-      <div class="col-sm-7">
+      <div class="columnc">
         <img src="images\giphy.gif" alt="Los Angeles" style="width:100%;" class="img-responsive">
       </div>
     </div>
@@ -146,11 +146,11 @@
     <br>
     <br>
 
-    <div class="row">
-      <div class="col-sm-7">
+    <div class="rowr">
+      <div class="columnc">
         <img src="images\health.gif" alt="Los Angeles" style="width:75%;" class="img-responsive">
       </div>
-      <div class="col-sm-5">
+      <div class="columnc">
         <h1> - Health- </h1>
       </div>
     </div>
@@ -159,14 +159,14 @@
 
   <!-- four panel boxes -->
 
-  <div id="SectionOurProjects">
+  <div id="SectionOurProjects container-fluid">
 
     <h2> Our Projects </h2>
 
-    <div class="row">
-      <div class="panel-group">
-        <div class="col-sm-3">
-          <div class="panel panel-info">
+    <div class="rowr container">
+      
+        <div class="column-one-fourth">
+          <div class="panel panel-warning">
             <div class="panel-heading">
               <h3>Education</h3>
             </div>
@@ -176,8 +176,8 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-3">
-          <div class="panel panel-danger">
+        <div class="column-one-fourth">
+          <div class="panel panel-info">
             <div class="panel-heading">
               <h3>Water</h3>
             </div>
@@ -187,7 +187,7 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-3">
+        <div class="column-one-fourth">
           <div class="panel panel-success">
             <div class="panel-heading">
               <h3>Trees</h3>
@@ -198,8 +198,8 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-3">
-          <div class="panel panel-warning">
+        <div class="column-one-fourth">
+          <div class="panel panel-danger">
             <div class="panel-heading">
               <h3>Health</h3>
             </div>
@@ -209,7 +209,7 @@
             </div>
           </div>
         </div>
-      </div>
+      
     </div>
   </div>
 
@@ -218,7 +218,7 @@
 
 
   <!-- About us -->
-  <div id="SectionAboutUs">
+  <div id="SectionAboutUs container-fluid">
     <h2> About us </h2>
     <h1 style="text-align:center">- Our Mission -</h1>
     <h3 style="text-align:center"> To provide the most actionable app store data. </h3>
@@ -248,7 +248,7 @@
 
 
   <!-- contact us -->
-  <div id="SectionContactUs">
+  <div id="SectionContactUs container-fluid">
     <h2 id="cntus"> Contact Us </h2>
 
     <form>
@@ -268,16 +268,32 @@
     </form>
     <button type="button" class="btn btn-success">Send</button>
     <button type="button" class="btn btn-danger">Cancel</button>
+	<br><br>
     <!-- contact  us -->
+  
+
+  
   </div>
 
+<!-- Footer -->
+<div class="footer container-fluid nav-link-font">
+    <a class="nav-link" href="#">Blog</a>
+    <a class="nav-link" href="#SectionOurProjects">Our Projects</a>
+    <a class="nav-link" href="#SectionAboutUs">About Us</a>
+    <a class="nav-link" href="#SectionContactUs">Contact Us</a>
+    <a class="nav-link" href="#">Donate</a>
+</div>
+
+</div>
+<!-- Footer end-->
+  
+  
   <!-- scroll top button -->
   <a onclick="topFunction()" id="myBtn" href="#">
     <span class="glyphicon glyphicon-menu-up"></span>
   </a>
 
   <!-- scrool top button -->
-
 
 
 
@@ -292,19 +308,16 @@
       } else {
         navbar.classList.remove("sticky");
       }
-
       var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
       var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
       var scrolled = (winScroll / height) * 100;
       document.getElementById("myBar").style.width = scrolled + "%";
-
       if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
         document.getElementById("myBtn").style.display = "block";
       } else {
         document.getElementById("myBtn").style.display = "none";
       }
     }
-
     function topFunction() {
       document.body.scrollTop = 0;
       document.documentElement.scrollTop = 0;

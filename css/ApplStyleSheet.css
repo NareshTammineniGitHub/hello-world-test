@@ -111,8 +111,28 @@ body {
 #SectionAboutUs {padding-top:100px; }
 #SectionContactUs {padding-top:50px;}
 #SectionBlog {padding-top:100px; }
-#SectionOurProjects {padding-top:100px;  }
+#SectionOurProjects {padding-top:100px;}
 
+.rowr {
+    display: flex;
+}
+
+.columnc {
+    flex: 33.33%;
+    padding: 5px;
+}
+
+.column-one-fourth {
+    flex: 25%;
+    padding: 5px;
+}
+
+.footer {
+    color: white;
+	height: 200px;
+    background: gray; /* For browsers that do not support gradients */
+    background: radial-gradient(#d86a6b,#d35859, #cf4647); /* Standard syntax (must be last) */
+}
 
 
 /*********Timeline start*********/
