@@ -9,9 +9,9 @@
   <link rel="stylesheet" href="css\ApplStyleSheet.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-  </style>
+ 
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -50,7 +50,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Helping Hands</a>
+          <a class="navbar-brand" href="#"> <span class="glyphicon glyphicon-globe"></span>  Helping Hands</a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav">
@@ -75,8 +75,7 @@
     </nav>
   </div>
 
-
-
+  
   <div class="content1 container-fluid">
     <h3>Sticky Navigation Example</h3>
     <p>The navbar will stick to the top when you reach its scroll position.</p>
@@ -101,30 +100,17 @@
     <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum,
       altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec
       et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-  </div>
-
+  
+</div>
   <!-- Four images -->
 
   <div class="container">
     <div class="rowr">
       <div class="columnc">
-        <h1> - Education - </h1>
+        <h3> - Education - </h3>
       </div>
       <div class="columnc">
-        <img src="images/education-11.jpg" alt="Los Angeles" style="width:100%;" class="img-responsive ">
-      </div>
-    </div>
-
-    <br>
-    <br>
-    <br>
-
-    <div class="rowr">
-      <div class="columnc">
-        <img src="images\gp1.gif" alt="Los Angeles" style="width:100%;" class="img-responsive ">
-      </div>
-      <div class="columnc">
-        <h1 style="text-align:center"> - Planting Trees- </h1>
+        <img src="images/education-11.jpg" alt="Education" style="width:100%;" class="img-responsive ">
       </div>
     </div>
 
@@ -134,10 +120,23 @@
 
     <div class="rowr">
       <div class="columnc">
-        <h1> - Water- </h1>
+        <img src="images\plant.jpg" alt="Plants" style="width:100%;" class="img-responsive ">
       </div>
       <div class="columnc">
-        <img src="images\giphy.gif" alt="Los Angeles" style="width:100%;" class="img-responsive">
+        <h3 style="text-align:center"> - Planting Trees- </h3>
+      </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <div class="rowr">
+      <div class="columnc">
+        <h3> - Water- </h3>
+      </div>
+      <div class="columnc">
+        <img src="images\water.png" alt="Water" style="width:80%;" class="img-responsive">
       </div>
     </div>
 
@@ -148,10 +147,10 @@
 
     <div class="rowr">
       <div class="columnc">
-        <img src="images\health.gif" alt="Los Angeles" style="width:75%;" class="img-responsive">
+        <img src="images\health" alt="Health" style="width:100%;" class="img-responsive">
       </div>
       <div class="columnc">
-        <h1> - Health- </h1>
+        <h3 style="text-align:center"> - Health- </h3>
       </div>
     </div>
   </div>
@@ -159,13 +158,13 @@
 
   <!-- four panel boxes -->
 
-  <div id="SectionOurProjects container-fluid">
+  <div id="SectionOurProjects" class="container">
 
     <h2> Our Projects </h2>
 
-    <div class="rowr container">
+    <div class="row">
       
-        <div class="column-one-fourth">
+        <div class="col-sm-3 col-md-3">
           <div class="panel panel-warning">
             <div class="panel-heading">
               <h3>Education</h3>
@@ -176,7 +175,7 @@
             </div>
           </div>
         </div>
-        <div class="column-one-fourth">
+         <div class="col-sm-3 col-md-3">
           <div class="panel panel-info">
             <div class="panel-heading">
               <h3>Water</h3>
@@ -187,7 +186,7 @@
             </div>
           </div>
         </div>
-        <div class="column-one-fourth">
+        <div class="col-sm-3 col-md-3">
           <div class="panel panel-success">
             <div class="panel-heading">
               <h3>Trees</h3>
@@ -198,7 +197,7 @@
             </div>
           </div>
         </div>
-        <div class="column-one-fourth">
+         <div class="col-sm-3 col-md-3">
           <div class="panel panel-danger">
             <div class="panel-heading">
               <h3>Health</h3>
@@ -218,7 +217,7 @@
 
 
   <!-- About us -->
-  <div id="SectionAboutUs container-fluid">
+  <div id="SectionAboutUs" class="container">
     <h2> About us </h2>
     <h1 style="text-align:center">- Our Mission -</h1>
     <h3 style="text-align:center"> To provide the most actionable app store data. </h3>
@@ -248,21 +247,22 @@
 
 
   <!-- contact us -->
-  <div id="SectionContactUs container-fluid">
+  <div id="SectionContactUs">
+  <div class="container">
     <h2 id="cntus"> Contact Us </h2>
 
     <form>
       <div class="form-group">
-        <label for="usr">Name</label>
-        <input type="text" class="form-control" id="usr">
+        <label for="usr">Full Name</label>
+        <input type="text" class="form-control" id="fullname">
       </div>
       <div class="form-group">
-        <label for="fn">Full Name</label>
-        <input type="text" class="form-control" id="fn">
+        <label for="fn">Email</label>
+        <input type="text" class="form-control" id="email">
       </div>
       <div class="form-group">
         <label for="cmt">Message</label>
-        <textarea rows="5" class="form-control" id="cmt"></textarea>
+        <textarea rows="5" class="form-control" id="comment"></textarea>
       </div>
 
     </form>
@@ -271,19 +271,46 @@
 	<br><br>
     <!-- contact  us -->
   
-
+	</div>
   
   </div>
-
 <!-- Footer -->
-<div class="footer container-fluid nav-link-font">
-    <a class="nav-link" href="#">Blog</a>
-    <a class="nav-link" href="#SectionOurProjects">Our Projects</a>
-    <a class="nav-link" href="#SectionAboutUs">About Us</a>
-    <a class="nav-link" href="#SectionContactUs">Contact Us</a>
-    <a class="nav-link" href="#">Donate</a>
+
+
+
+
+<div class="footer container-fluid">
+
+<div class="row">
+	<div class="col-sm-4">
+		<img src="images/logo.png" alt="Helping Hands" height="60px" width="250px;" class="img-responsive">
+	</div>
+	<div class="col-sm-4 nav-link-font" style="text-align:center">
+	<h4 style="text-decoration:underline"> Quick Links </h4>
+		<a class="nav-link" href="#"></a>
+		<a class="nav-link" href="#">Blog</a><br>
+		<a class="nav-link" href="#SectionOurProjects">Our Projects</a><br>
+		<a class="nav-link" href="#SectionAboutUs">About Us</a><br>
+		<a class="nav-link" href="#SectionContactUs">Contact Us</a><br>
+		<a class="nav-link" href="#">Donate</a>
+	</div>
+	<div class="col-sm-4">
+		<div class="row">
+			<div class="col-md-12">
+				<h4 style="text-decoration:none"> Follow Us </h4>
+				<a href="#" class="fa fa-facebook"></a>
+				<a href="#" class="fa fa-twitter"></a>
+				<a href="#" class="fa fa-google"></a>
+				<a href="#" class="fa fa-linkedin"></a>
+			</div>
+		</div>
+
+	</div>
 </div>
 
+</div>
+<div class="copyright container-fluid">
+	<h5 style="text-align:center">© 2018. All rights reserved.</h5>
 </div>
 <!-- Footer end-->
   
